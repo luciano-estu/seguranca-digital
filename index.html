@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 Gerador de Senhas</h1>
+
+    <div class="senha-box">
+        <input
+            type="text"
+            id="senha"
+            readonly
+            placeholder="Sua senha aparecerá aqui">
+
+        <button id="copiar">
+            Copiar
+        </button>
+    </div>
+
+    <div class="configuracoes">
+
+        <h2>Quantidade de caracteres</h2>
+
+        <div class="contador">
+
+            <button id="diminuir">−</button>
+
+            <span id="valorCaracteres">
+                12
+            </span>
+
+            <button id="aumentar">+</button>
+
+        </div>
+
+        <h2>Opções</h2>
+
+        <label>
+            <input
+                type="checkbox"
+                id="maiusculas"
+                checked>
+
+            Letras Maiúsculas
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                id="minusculas"
+                checked>
+
+            Letras Minúsculas
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                id="numeros"
+                checked>
+
+            Números
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                id="simbolos"
+                checked>
+
+            Símbolos
+        </label>
+
+    </div>
+
+    <div class="forca">
+
+        <h2>Força da senha</h2>
+
+        <div class="barra">
+            <div id="nivel"></div>
+        </div>
+
+        <p id="textoForca">
+            Média
+        </p>
+
+    </div>
+
+    <button id="gerar" class="gerar">
+        Gerar Senha
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
